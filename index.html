@@ -10,23 +10,47 @@
 
 <body>
 
+
     <section class="section">
-        <textarea  placeholder="Enter Your Text" class="textarea" name="textarea" id="text" cols="30" rows="10"></textarea>
+        <textarea placeholder="Enter Your Text" class="textarea" name="textarea" id="text" cols="30"
+            rows="10"></textarea>
     </section>
+
 
 
     <section class="section2">
-        <input onchange="f1(this)" class="number" min="1" max="100" value="16" type="number">
-         <div class="addText">
-           <p class="textadd">Add Text</p>
-        </div>
-        <input onchange="f2(this)" type="color">
 
-       
+        <div class="">
+            <p class="">Font</p>
+            <select onchange="f3(this)" class="fontSelect">
+                <option value="Arial">Arial</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Palatino Linotype">Palatino Linotype</option>
+                <option value="Tahoma">Tahoma</option>
+                <option value="Trebuchet MS">Trebuchet MS</option>
+                <option value="Impact">Impact</option>
+                <option value="Comic Sans MS">Comic Sans MS</option>
+            </select>
+        </div>
+
+        <div>
+            <div class="gap">
+                <input onchange="f1(this)" class="number" min="1" max="100" value="16" type="number">
+                <input onchange="f2(this)" type="color">
+            </div>
+            <div class="addText">
+                <p onclick="addNewPage()" class="textadd">Add Text</p>
+            </div>
+
+
+        </div>
     </section>
 
 
-<script src="./main.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>
